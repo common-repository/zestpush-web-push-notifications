@@ -1,0 +1,79 @@
+#zestpush-selectbox {
+    border-radius: 6px;
+}
+#zestpush-selectbox .postbox-header {
+    background: #EDF2F9;
+    border-radius: 6px 6px 0px 0px;
+}
+.zest-meta-pushbox label {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+.zest-meta-pushbox textarea {
+	width : 100%
+/*     width: -webkit-fill-available; */
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.zest-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 23px;
+}
+
+.zest-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.round {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.round:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .round {
+    background-color: #2196F3;
+}
+
+input:focus + .round {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .round:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+.round {
+    border-radius: 34px;
+}
+
+.round:before {
+    border-radius: 50%;
+}
+
